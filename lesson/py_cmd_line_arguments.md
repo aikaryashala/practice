@@ -70,23 +70,16 @@ table_number = int(sys.argv[1])
 
 ## 5. Flights SQLite
 #### Convert these programs to accept command line arguments
-```bash
-- cmd_flight_insert.py <origin> <destination> <duration>
-  // e.g: python3 flight_insert.py Visakhapatnam Vijayawada 90
-- cmd_flights_starting.py <origin> 
-  // e.g: python3 cmd_flights_starting.py Visakhapatnam
-- cmd_flights_between.py <origin> <destination>
-  // e.g: python3 cmd_flights_between.py Visakhapatnam Vijayawada
-```
+- `cmd_flight_insert.py <origin> <destination> <duration>` // e.g: python3 flight_insert.py Visakhapatnam Vijayawada 90
+- `cmd_flights_starting.py <origin>` // e.g: python3 cmd_flights_starting.py Visakhapatnam
+- `cmd_flights_between.py <origin> <destination>`  // e.g: python3 cmd_flights_between.py Visakhapatnam Vijayawada
+
 
 ## 6. Flights DB initialization.
 #### Assume the DB intialization is done before running above 3 commands
-```bash
 Implement the following python script.
-- cmd_init_db.py <sql-script-filename>  
-  // e.g: `cmd_init_db.py init_flights_ap.sql`
-  //      it executes the script in `init_flights_ap.sql`.  
-```
+- `cmd_init_db.py <sql-script-filename>`  
+e.g: `cmd_init_db.py init_flights_ap.sql`, it executes the script written in file `init_flights_ap.sql`.  
 
 ##### Sample code to open a file and read it's content in Python
 ```py
@@ -95,4 +88,3 @@ sql_script_content = sql_file.read()
 sql_file.close()
 ```
 Use `cursor.executescript` function, to execute the script in `sql_script_content` variable.
-

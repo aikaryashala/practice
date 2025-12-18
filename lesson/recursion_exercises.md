@@ -1,11 +1,14 @@
 # Debugger commands needed for this exercise
 
 **Current instruction address (where you are now)**
+Run these 2 commands one after the other. To see **disassembly* of the `m/c code` in `assembly code` and **register PC** value.
 ```
+(lldb) dis
 (lldb) register read pc
 ```
 or
 ```
+(lldb) dis
 (lldb) p/x $pc
 ```
 

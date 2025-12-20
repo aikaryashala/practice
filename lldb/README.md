@@ -17,6 +17,8 @@ Copy the following files to `~/.lldb/`:
 
 ```bash
 curl https://raw.githubusercontent.com/aikaryashala/practice/refs/heads/main/lldb/aik_bt.py -o ~/.lldb/aik_bt.py
+```
+```bash
 curl https://raw.githubusercontent.com/aikaryashala/practice/refs/heads/main/lldb/aik_renderer.py -o ~/.lldb/aik_renderer.py
 ```
 
@@ -26,6 +28,11 @@ Add the following line to your `~/.lldbinit` file:
 
 ```
 command script import ~/.lldb/aik_bt.py
+```
+If `~/.lldbinit` doesn't exist, create it:
+
+```bash
+echo "command script import ~/.lldb/aik_bt.py" >> ~/.lldbinit
 ```
 
 ### 4. Verify the installation

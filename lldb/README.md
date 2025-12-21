@@ -56,6 +56,7 @@ sudo update-alternatives --install /usr/bin/lldb lldb /usr/bin/lldb-15 100
 
 ```bash
 echo "export PYTHONPATH=/usr/lib/llvm-15/lib/python3.10/dist-packages:$PYTHONPATH" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### 5. Verify the installation

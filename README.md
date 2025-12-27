@@ -7,3 +7,5 @@
 6. [Copy code in sum.c and debug](./lesson/sum.c) before that you need to also do the steps in [lldb aik bt setup](./lldb/README.md)
 7. [C Program Loading Linux](./lesson/c_program_loading_linux.md)  
 8. [LLDB more commands](./lldb/lldb_more_commands.md)  
+9. [How nature really works?](./lesson/how_nature_really_works.md)  
+10. [Solution for Recursive programs](./solutions/recursion_solutions.md)  

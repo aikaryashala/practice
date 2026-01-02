@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h1 { color: #333; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        input { padding: 8px; margin: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Student Management System</h1>
+
+    <div class="section">
+        <h2>1. Load Students (JSON API)</h2>
+        <p>Click button to fetch students from /api/students and display in table</p>
+        <button onclick="loadStudents()">Load All Students</button>
+        <button onclick="loadStudentsByGrade()">Load Grade A Students</button>
+        <div id="message"></div>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. Add New Student (POST with JSON)</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="grade" placeholder="Grade (A/B/C)">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="addStudent()">Add Student</button>
+        <div id="addMessage"></div>
+    </div>
+
+    <div class="section">
+        <h2>3. Links to Other Routes</h2>
+        <p><a href="/view/students" target="_blank">View Students (Server-rendered HTML)</a></p>
+        <p><a href="/api/students" target="_blank">API: Get All Students (JSON)</a></p>
+        <p><a href="/api/students?grade=A" target="_blank">API: Get Grade A Students (JSON)</a></p>
+        <p><a href="/api/students/1" target="_blank">API: Get Student ID 1 (JSON)</a></p>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

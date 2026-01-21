@@ -10,4 +10,5 @@
 9. [How nature really works?](./lesson/how_nature_really_works.md)  
 10. [Solution for Recursive programs](./solutions/recursion_solutions.md)  
 11. [API GET method explore the response details](./lesson/weather_api_exercises.md)
-12. [Debug Simple Python Backend Server in Ubuntu VM](./sample_be/README.md)
+12. [Debug Simple Python Backend Server in Ubuntu VM](./sample_be/README.md)  
+13. [Explore the response of a post office API](./lesson/post_office_api_call_in_py.md)  
